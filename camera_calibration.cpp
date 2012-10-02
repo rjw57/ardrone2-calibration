@@ -367,6 +367,12 @@ int main(int argc, char* argv[])
                 continue;
             remap(view, rview, map1, map2, INTER_LINEAR);
             imshow("Image View", rview);
+
+            // save the undistorted file
+            char filename[255];
+            snprintf(filename, 255, "undistort-frame-%04i.jpg", i);
+            imwrite(filename, rview);
+
             char c = waitKey();
             if( c  == ESC_KEY || c == 'q' || c == 'Q' )
                 break;
