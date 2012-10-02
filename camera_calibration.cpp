@@ -550,3 +550,5 @@ bool runCalibrationAndSave(Settings& s, Size imageSize, Mat&  cameraMatrix, Mat&
                             imagePoints, totalAvgErr);
     return ok;
 }
+
+// vim:sw=4:sts=4:et
