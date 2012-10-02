@@ -35,3 +35,13 @@ The `camera_calibration` program will find the checkerboard in the image and
 then show the undistorted images. Press space to move to the next image. The
 camera calibration itself is written to `out_camera_data.xml`.
 
+TODO
+----
+
+* Take similar images with the bottom camera.
+
+* Add intrinsics for the front and bottom cameras in OpenCV's XML format.
+
+* Add ROS [camera\_driver](http://www.ros.org/wiki/camera_drivers) intrinsics in YAML format.
+
+* Perhaps repeat the experiment with another drone to see how stable the intrinsics are.
